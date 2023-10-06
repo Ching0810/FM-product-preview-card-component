@@ -29,9 +29,11 @@ Users should be able to:
 
 ### Screenshot
 Desktop version:
+<br/>
 <img src='./images/Screenshot 2023-10-06 at 22.11.33.png'>
 
 Mobile version:
+<br/>
 <img src='./images/Screenshot 2023-10-06 at 22.04.53.png'>
 
 ## My process
