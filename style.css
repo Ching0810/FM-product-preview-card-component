@@ -1,0 +1,116 @@
+@import url("https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Montserrat:wght@500;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 14px;
+}
+
+.container {
+  width: 100vw;
+  min-height: 100vh;
+  background-color: hsl(30, 38%, 92%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.container .card {
+  width: 90vw;
+  background-color: hsl(0, 0%, 100%);
+  display: flex;
+  flex-direction: column;
+  border-radius: 10px;
+}
+.container .card .img {
+  background: url(./images/image-product-mobile.jpg);
+  width: 100%;
+  height: 235px;
+  border-radius: 10px 10px 0 0;
+  background-size: cover;
+  background-position: center;
+}
+.container .card .text {
+  padding: 2rem 1.5rem;
+}
+.container .card .text h1 {
+  font-family: "Fraunces", serif;
+  font-size: 30px;
+  margin-bottom: 1rem;
+}
+.container .card .text p, .container .card .text .product {
+  color: hsl(228, 12%, 48%);
+  font-family: "Montserrat", sans-serif;
+}
+.container .card .text .product {
+  letter-spacing: 0.3rem;
+  text-transform: uppercase;
+  margin-bottom: 0.5rem;
+}
+.container .card .text .info {
+  line-height: 1.5rem;
+  font-size: 15px;
+  margin-bottom: 1.5rem;
+}
+.container .card .text .price {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+.container .card .text .price .priceDiscount {
+  color: hsl(158, 36%, 37%);
+  font-family: "Fraunces", serif;
+  font-size: 30px;
+  margin-right: 1rem;
+}
+.container .card .text .price .priceOrigin {
+  font-family: "Montserrat", sans-serif;
+  color: hsl(228, 12%, 48%);
+  text-decoration: line-through;
+}
+.container .card .text .btn {
+  text-align: center;
+  background-color: hsl(158, 36%, 37%);
+  color: hsl(0, 0%, 100%);
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  padding: 1rem 0;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: background-color 0.5s ease-in-out;
+}
+.container .card .text .btn .cartImg {
+  background-image: url(./images/icon-cart.svg);
+  width: 20px;
+  height: 20px;
+  background-position: center;
+  background-size: cover;
+  margin-right: 12px;
+}
+.container .card .text .btn:hover {
+  background-color: hsl(212, 21%, 14%);
+}
+
+@media screen and (min-width: 375px) {
+  .container .card {
+    width: 70vw;
+    flex-direction: row;
+  }
+  .container .card .img {
+    width: 50%;
+    background: url(./images/image-product-desktop.jpg);
+    height: auto;
+    border-radius: 10px 0 0 10px;
+    background-size: cover;
+    background-position: center;
+  }
+  .container .card .text {
+    padding: 3rem;
+    width: 50%;
+  }
+  .container .card .text p.info {
+    font-size: 10px;
+  }
+}/*# sourceMappingURL=style.css.map */
